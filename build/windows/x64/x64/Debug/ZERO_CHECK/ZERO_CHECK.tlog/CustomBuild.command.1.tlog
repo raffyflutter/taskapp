@@ -1,0 +1,10 @@
+^E:\INNOVABE\TASKAPP\BUILD\WINDOWS\X64\CMAKEFILES\434A35F5003109BF505913E9FD4D6118\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/innovabe/taskapp/windows -BE:/innovabe/taskapp/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/innovabe/taskapp/build/windows/x64/taskapp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

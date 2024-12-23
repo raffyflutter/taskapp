@@ -1,0 +1,10 @@
+^E:\INNOVABE\TASKAPP\BUILD\WINDOWS\X64\CMAKEFILES\434A35F5003109BF505913E9FD4D6118\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
