@@ -1,3 +1,7 @@
+buildscript {
+    ext.kotlin_version = '1.8.0'  // or the version you're using
+}
+
 allprojects {
     repositories {
         google()
@@ -15,4 +19,8 @@ subprojects {
 
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
+}
+dependencies {
+classpath 'com.android.tools.build:gradle:7.2.0'
+classpath 'dev.flutter:flutter-gradle-plugin:3.0.0'
 }

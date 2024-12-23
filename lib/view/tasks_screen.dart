@@ -29,19 +29,16 @@ class _TasksScreenState extends State<TasksScreen> {
     taskController.fetchData();
   }
 
-  int _selectedIndex = 0; // Track the selected index
+  // ignore: unused_field
+  int _selectedIndex = 0;
 
-  // Method to handle navigation based on index
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
-    // You can add navigation logic based on the selected index
     if (index == 0) {
-      // Navigate to Home Page
       Navigator.pushNamed(context, Pages.home);
     } else if (index == 1) {
-      // Navigate to Task Page
       Navigator.pushNamed(context, Pages.createNewTask);
     }
   }
@@ -173,7 +170,7 @@ class _TasksScreenState extends State<TasksScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SizedBox(height: size.height * 0.15),
+                          SizedBox(height: size.height * 0.08),
                           SvgPicture.asset(
                             'assets/svgs/tasks.svg',
                             height: size.height * .20,

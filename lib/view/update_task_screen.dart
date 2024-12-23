@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/list_notifier.dart';
 import 'package:taskapp/utils/font_sizes.dart';
 import 'package:taskapp/view_model.dart/controllers/task_controller.dart';
-import '../components/custom_app_bar.dart';
 import '../components/widgets.dart';
 import '../view_model.dart/model/task_model.dart';
 import '../utils/color_palette.dart';
