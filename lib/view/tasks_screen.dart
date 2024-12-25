@@ -99,6 +99,7 @@ class _TasksScreenState extends State<TasksScreen> {
                               color: Colors.white,
                             ),
                             onSelected: (value) {
+                              LocalStorageMethods.instance.clear();
                               authController.logout();
                             },
                             itemBuilder: (BuildContext context) => [
@@ -170,7 +171,7 @@ class _TasksScreenState extends State<TasksScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SizedBox(height: size.height * 0.08),
+                          SizedBox(height: size.height * 0.03),
                           SvgPicture.asset(
                             'assets/svgs/tasks.svg',
                             height: size.height * .20,
