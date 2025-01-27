@@ -96,6 +96,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                       // Email
                       TextFormField(
+                        keyboardType: TextInputType.emailAddress,
                         style: TextStyle(color: Colors.white),
                         validator: (value) {
                           return ValidationService.validateEmail(value);

@@ -54,6 +54,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     child: Column(
                       children: [
                         TextFormField(
+                          keyboardType: TextInputType.emailAddress,
                           style: TextStyle(color: Colors.white),
                           cursorColor: kWhiteColor,
                           controller: signinController.emailController.value,
