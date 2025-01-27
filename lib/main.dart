@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Task Manager',
       debugShowCheckedModeBanner: false,
-      initialRoute: Pages.initial,
+      initialRoute: Pages.signin,
       onGenerateRoute: onGenerateRoute,
       theme: ThemeData(
         fontFamily: 'Sora',

@@ -53,13 +53,14 @@ class AuthController extends GetxController {
     isLoading.value = true;
     final token = LocalStorageMethods.instance.getUserApiToken();
     print('LogoutTken $token');
-    if (token == null) {
-      isLoading.value = false;
-      Get.snackbar('Logout', 'No token found');
-      return;
-    }
+    // if (token == null) {
+    //   isLoading.value = false;
+    //   Get.snackbar('Logout', 'No token found');
+    //   return;
+    // }
     repository.logoutApi(token).then((value) {
       isLoading.value = false;
+      LocalStorageMethods.instance.clear();
       Get.snackbar('Logout', 'Logged out successfully');
       Get.toNamed(Pages.signin);
     }).onError((error, stackTrace) {

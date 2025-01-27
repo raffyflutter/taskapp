@@ -99,7 +99,6 @@ class _TasksScreenState extends State<TasksScreen> {
                               color: Colors.white,
                             ),
                             onSelected: (value) {
-                              LocalStorageMethods.instance.clear();
                               authController.logout();
                             },
                             itemBuilder: (BuildContext context) => [

@@ -56,6 +56,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     children: [
                       // Full Name
                       TextFormField(
+                        style: TextStyle(color: Colors.white),
                         validator: (value) {
                           return ValidationService.validateNull(value);
                         },
@@ -95,6 +96,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                       // Email
                       TextFormField(
+                        style: TextStyle(color: Colors.white),
                         validator: (value) {
                           return ValidationService.validateEmail(value);
                         },
@@ -133,6 +135,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       const SizedBox(height: 20.0),
 
                       TextFormField(
+                        style: TextStyle(color: Colors.white),
                         validator: (value) {
                           return ValidationService.validatePassword(value);
                         },
@@ -172,6 +175,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                       // Confirm Password
                       TextFormField(
+                        style: TextStyle(color: Colors.white),
                         validator: (value) {
                           return ValidationService.validateConfirmPassword(
                               signUpController

@@ -6,9 +6,11 @@ buildscript {
         mavenCentral()
         maven { url 'https://storage.googleapis.com/download.flutter.io' } 
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0' 
-      }
+dependencies {
+classpath 'com.android.tools.build:gradle:8.0.0'
+}
+
+
 }
 
 rootProject.buildDir = "../build"
